@@ -1,0 +1,82 @@
+{% extends "/html/base.html" %}
+
+{% block content-wrap %}
+
+<div class="col-sm-9 col-xs-12" id="main-content">
+
+  <span id="sidebar-toggle" class="hidden-print sidebar-toggle"></span>
+
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+</div>
+<div class="col-sm-3 hidden-xs" id="sidebar">
+
+  <img src="/img/bio-photo.jpg" class="img-responsive img-circle" alt="Mug Shot" style="max-width:120px;">
+  <ul class="post-list">
+    <li>
+      <span class="entry-bio">
+        Torsten Uhlmann<br>
+        AGYNAMIX Founder, Software Developer, Husband, Father, Believer, Geek.
+      </span>
+    </li>
+  </ul>
+
+  <h2 class="post-title">Publications</h2>
+  <ul class="post-list">
+    <li>
+      <article>
+        Torsten Uhlmann spoke at <a href="https://skillsmatter.com/skillscasts/4570-lift-3-high-and-lifted-up" target="_blank">Scala Exchange</a> and <a href="https://www.parleys.com/play/51c1a652e4b0ed877035681f/chapter0/about" target="_blank">ScalaDays</a> conferences.
+        He is the author of the Lift Web Applications HowTo.
+      </article>
+    </li>
+    <li>
+      <article>
+        <a href="https://www.packtpub.com/web-development/instant-lift-web-applications-how-instant" target="_blank">
+          <img style="max-height:250px" src="/img/portfolio/LiftWebAppsHowTo.png">
+        </a>
+      </article>
+    </li>
+    <li>
+      <article>
+        <a href="http://www.liftweb.net" target="_blank"><img style="max-height:30px" src="/img/portfolio/Liftweb.png"></a><br>
+          He is committer of the <a href="http://www.liftweb.net" target="_blank">Liftweb Framework</a>.
+      </article>
+    </li>
+  </ul>
+
+
+  <h2 class="post-title">Links</h2>
+  <ul id="links" class="post-list">
+    {% for page in sidebar-pages %}
+    <li><a href="{{page.uri}}" class="no-underline">{{page.title}}</a></li>
+    {% endfor %}
+  </ul>
+  {% if latest-posts|not-empty %}
+  <div id="recent">
+    <h2 class="post-title">Recent Posts</h2>
+    <ul class="post-list">
+      {% for post in latest-posts %}
+      <li><a href="{{post.uri}}" class="no-underline">{{post.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  <!--
+  {% if tags|not-empty %}
+  <div id="tags">
+    <h2 class="post-title">Tags</h2>
+    <ul class="post-list">
+      {% for tag in tags %}
+      <li><a href="{{tag.uri}}" class="no-underline">{{tag.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+-->
+
+</div>
+
+{% endblock %}

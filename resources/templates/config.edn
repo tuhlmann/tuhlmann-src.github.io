@@ -1,0 +1,26 @@
+{:site-title         "AGYNAMIX"
+ :author             "Torsten Uhlmann"
+ :author-email       "tuhlmann@agynamix.de"
+ :description        "This blog is awesome"
+ :site-url           "http://agynamix.de/"
+ :post-root          "posts"
+ :tag-root           "tags"
+ :page-root          "pages"
+ :blog-prefix        nil
+ :rss-name           "feed.xml"
+ :rss-filters        ["cryogen"]
+ :recent-posts       3
+ :post-date-format   "yyyy-MM-dd"
+ :sass-src           "themes/clean/sass"
+ :sass-dest          nil
+ :theme              "clean"
+ :resources          ["img", "themes/clean/img", "img/favicon.ico"]
+ :keep-files         [".git"]
+ :disqus?            true
+ :disqus-shortname   "agynamix"
+ :ignored-files      [#"\.#.*" #".*\.swp$"]
+ :posts-per-page     5
+ :blocks-per-preview 2
+ :previews?          false
+ :site-banner        "/img/home-bg.jpg"
+}

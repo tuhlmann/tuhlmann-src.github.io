@@ -1,0 +1,22 @@
+{% extends "/html/base_sidebar.html" %}
+{%block subtitle %}: Posts{% endblock %}
+{% block content %}
+<div id="posts">
+    <div id="page-header">
+        <h2>List of Posts</h2>
+    </div>
+    <ul class="list-unstyled">
+    {% for group in groups %}
+        <!--<h4>{{group.group}}</h4>-->
+        <!--<ul>-->
+        {% for post in group.posts %}
+        <li>
+            <a href="{{post.uri}}">{{post.date|date:"MMM dd YYYY"}} - {{post.title}}</a>
+        </li>
+        {% endfor %}
+        <!--</ul>-->
+    {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}

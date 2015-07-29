@@ -1,0 +1,96 @@
+{% extends "/html/base_sidebar.html" %}
+{%block subtitle %}: {{page.title}}{% endblock %}
+{% block content %}
+
+<div>
+  <h2>Consulting Services</h2>
+  <p class="post-excerpt">
+    <strong>As your professional IT partner</strong>, we produce specialized and customized software and consult and assist you in your IT needs. We are sure you will become a satisfied customer as well.
+  </p>
+  <p class="hidden-print">
+    <a href="mailto:{{author-email}}" class="btn btn-primary btn-round">
+    <i class="fa fa-envelope"></i> Contact Us!
+    </a>
+  </p>
+
+  <h2>Past Clients</h2>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/T-Systems.png">
+        <div class="caption">
+          <p>Lots of projects, lots of experience. Java, Oracle &amp; large servers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/MeWe.png">
+        <div class="caption">
+          <p>Formerly sgrouples.com. Scala, Lift &amp; Mongo DB.
+            MeWe is a privacy concious social network.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/Sparkasse_1822.png">
+        <div class="caption">
+          <p>Java &amp; JSP. Wrote a frontend for processing customer printables.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/twisp.png">
+        <div class="caption">
+          <p>Scala, Lift &amp; MySQL. Kind of a personalized wayback machine.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/Underscore.png" style="width:70%;">
+        <div class="caption">
+          <p>Scala &amp; Lift projects with the awesome folks at Underscore Consulting.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/WKS-Group.png" style="width:70%;">
+        <div class="caption">
+          <p>Signal monitoring and broadcasting software.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail client">
+        <img src="img/portfolio/BN-Automation.gif" style="width:60%;">
+        <div class="caption">
+          <p>Signal monitoring and broadcasting software.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <h2 class="post-title">Preferred Technologies</h2>
+  <p class="post-excerpt small">
+   <img src="/images/technologies/clojure.png">
+   <img src="/images/technologies/Scala.png">
+   <img src="/images/technologies/AngularJS.png">
+   <img src="/images/technologies/MongoDB.png">
+   <img src="/images/technologies/Docker.png">
+  </p>
+  -->
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "/html/base_clean.html" %}
+{%block subtitle %}: {{page.title}}{% endblock %}
+{% block content %}
+<div id="custom-page">
+  <div id="page-header">
+    <h2>{{page.title}}</h2>
+  </div>
+  {% if page.toc %}{{page.toc|safe}}{% endif %}
+  {{page.content|safe}}
+
+  {% if page.show-prev-next? %}
+  <div id="prev-next">
+    {% if page.prev %}
+    <a href="{{page.prev.uri}}">&laquo; {{page.prev.title}}</a>
+    {% endif %}
+    {% if page.next %}
+    <a class="pull-right" href="{{page.next.uri}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
