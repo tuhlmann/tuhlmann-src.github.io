@@ -534,21 +534,16 @@ body {
 	    position: absolute;
 	    right: -5px;
 	    top: 0;
-	    width: 20px;
+	    width: 30px;
 	    font-size: 1.2em;
 	    line-height: 1.1em;
 	    padding-bottom: .15em;
-	    -moz-border-radius-bottomright: 0.3em;
-	    -webkit-border-bottom-right-radius: 0.3em;
-	    border-bottom-right-radius: 0.3em;
 	    text-align: center;
-	    background: #f8f8f8 top left;
-	    border-bottom: 1px solid #e0e0e0;
-	    border-right: 1px solid #e0e0e0;
+	    border-radius: 20px;
+	    border: 1px solid #e0e0e0;
 	    content: "\00BB";
-	    text-indent: -1px;
+	    text-indent: 1px;
 		}
-
 }
 
 .navbar-default .navbar-nav>.active > a {
