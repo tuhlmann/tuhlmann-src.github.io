@@ -14,7 +14,7 @@
  :sass-src           "themes/clean/sass"
  :sass-dest          nil
  :theme              "clean"
- :resources          ["img", "themes/clean/img", "img/favicon.ico"]
+ :resources          ["img", "img/favicon.ico"]
  :keep-files         [".git"]
  :disqus?            true
  :disqus-shortname   "agynamix"
