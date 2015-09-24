@@ -1,0 +1,150 @@
+#!/bin/bash
+#
+# (c) 2004-2100 ;)
+# Author: cutmasta AT netline-is D0T de
+# "Jus7 s0m3 l4m3 b4sh Pr0n"
+# 
+#
+# This Script deletes a a OXUser from a OXGroup
+#
+#GLOBAL CONF
+prefix=/usr/local/openxchange
+exec_prefix=${prefix}
+
+GLOBAL_CONF="${prefix}/etc/admintools.conf"
+
+if [ -f $GLOBAL_CONF ]
+    then
+    . $GLOBAL_CONF
+    else
+    echo "Config File $GLOBAL_CONF not found."
+    exit 0
+fi
+
+ac_prev=
+for ac_option
+do 
+  if test -n "$ac_prev"; then
+    eval "$ac_prev=\$ac_option"
+    ac_prev=
+    continue
+  fi
+  case "$ac_option" in
+      -*=*) ac_optarg=`echo "$ac_option" | $SED_BIN 's/[-_a-zA-Z0-9]*=//'` ;;
+      *) ac_optarg= ;;
+  esac
+  
+  case "$ac_option" in
+      
+      --user)
+	  ac_prev=user ;;
+      --user=*) 
+	  USERNAME=$ac_optarg ;;
+
+      --group)
+	  ac_prev=group ;;
+      --group=*)
+	  GROUP=$ac_optarg ;;
+
+
+      -help | --help | -? | --?)
+	  
+	  cat <<EOF
+
+Usage: $0 [Options]
+
+Options:
+
+  --user=NAME                The Username - eg. john
+
+  --group=NAME               The Groupname - eg. development
+
+EOF
+	  exit 0
+	  
+	  ;;
+      
+      *)    
+	  echo "Unknown command $ac_option"
+	  echo "Try $0 --help"
+	  exit 1
+	  ;;
+  esac
+  
+done
+
+ERROR=
+
+if [ "$GROUP" = "" ]
+then
+        ERROR="y"
+        echo "Specify a Groupname!"
+fi
+
+if [ "$USERNAME" = "" ]
+then
+        ERROR="y"
+        echo "Specify an Username!"
+fi
+
+
+
+if [ "$ERROR" = "y" ]
+    then
+    echo "Provide all Parameter."
+    echo "See $0 --help for details."
+    exit 0
+fi
+
+esc=`echo -en "\033"`
+warn="${esc}[1;31m"
+done="${esc}[1;32m"
+info="${esc}[1;33m"
+
+# delete the user from the group
+echo "dn: cn=$GROUP,$GROUP_BASEDN" > $TMPDIF 
+echo "changetype: modify" >> $TMPDIF
+echo "delete: memberUid" >> $TMPDIF
+echo "memberUid: $USERNAME" >> $TMPDIF
+# tuhlmann, to delete the additional entry (for apache) from the group
+UID_PART=`echo "$GROUP_BASEDN" | $AWK_BIN -F , '{ print $2","$3","$4 }'`
+UID_FULL="uid=$USERNAME,ou=Users,$UID_PART"
+echo "memberUid: $UID_FULL" >> $TMPDIF
+
+
+LDAP_MOD_GROUP=`$LDAPMODIFY_BIN $LDAPCONN -f $TMPDIF 2>&1 | $GREP_BIN ldap_modify | $AWK_BIN -F'(' {'print $2'} | $AWK_BIN -F')' {'print $1'}`
+
+rm $TMPDIF
+
+LDAP_ERROR="y"
+
+case "$LDAP_MOD_GROUP" in
+    
+    "")
+	LDAP_ERROR="n"
+	;;
+    16)
+	echo "${warn}$USERNAME is not in $GROUP"		
+	;;
+    20)
+	echo "${warn}$USERNAME is already in $GROUP"
+	;;
+    34)
+	echo "${warn}invalid DN"
+	;;
+    *)
+	echo "${warn}Undefined ERROR - LDAP CODE $LDAP_INSERT"
+	echo "${warn}See Server Log for Details!"
+	
+esac
+
+if [ "$LDAP_ERROR" = "n" ]
+    then 
+    echo "${done}OK"
+    echo -en "${esc}[m\017"
+    echo -n ""
+else
+    echo "${warn}ERROR"
+    echo -en "${esc}[m\017"
+    echo -n ""
+fi
