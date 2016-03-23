@@ -2,7 +2,7 @@
   :title "Eclipse GEF and transparent images"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

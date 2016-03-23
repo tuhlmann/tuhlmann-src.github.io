@@ -2,7 +2,7 @@
   :title "Simidude 1.6.0 Release Notes"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "english" "it" "marketing" "newsletter" "release-notes" "simidude" "simidude"]
 }
 

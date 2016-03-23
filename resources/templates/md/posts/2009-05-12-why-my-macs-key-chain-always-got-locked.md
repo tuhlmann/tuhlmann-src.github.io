@@ -2,7 +2,7 @@
   :title "Why my Mac's key chain always got locked"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "mac"]
 }
 

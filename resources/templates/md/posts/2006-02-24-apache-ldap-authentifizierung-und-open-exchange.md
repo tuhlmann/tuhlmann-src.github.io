@@ -2,7 +2,7 @@
   :title "Apache LDAP Authentifizierung und Open-Exchange"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["programming"]
 }
 

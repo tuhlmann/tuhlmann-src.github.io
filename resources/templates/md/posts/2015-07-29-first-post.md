@@ -1,7 +1,7 @@
 {:title "A First Post"
  :layout :post
  :banner "/img/home-bg.jpg"
- :hide-disqus? false
+ :show-disqus? false
 }
 
 ### This is the place that needs to be filled with cool posts

@@ -2,7 +2,7 @@
   :title "Nice Developer's blog"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

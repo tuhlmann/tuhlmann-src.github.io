@@ -2,7 +2,7 @@
   :title "Version 1.3 Beta of the Network Clipboard AGYNAMIX Simidude is coming"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it" "marketing" "newsletter" "simidude"]
 }
 

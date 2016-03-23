@@ -2,7 +2,7 @@
   :title "Trixbox is our phone system now"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "telefonie"]
 }
 

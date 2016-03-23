@@ -2,7 +2,7 @@
   :title "A few more freebies"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "english" "news" "programming"]
 }
 

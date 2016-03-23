@@ -2,7 +2,7 @@
   :title "Earn Money by Selling Simidude"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["marketing" "newsletter" "sale"]
 }
 

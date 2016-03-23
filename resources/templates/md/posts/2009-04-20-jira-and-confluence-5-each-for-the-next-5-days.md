@@ -2,7 +2,7 @@
   :title "Jira and Confluence $5 each (for the next 5 days)"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["bug-tracking" "business" "java" "programming" "wiki"]
 }
 

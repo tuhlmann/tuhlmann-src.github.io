@@ -2,7 +2,7 @@
   :title "How to migrate your Thunderbird mail to Outlook"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "programming"]
 }
 

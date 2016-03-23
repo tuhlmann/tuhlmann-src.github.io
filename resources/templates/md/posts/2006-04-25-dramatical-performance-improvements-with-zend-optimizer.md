@@ -2,7 +2,7 @@
   :title "Dramatical performance improvements with Zend Optimizer"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["programming"]
 }
 

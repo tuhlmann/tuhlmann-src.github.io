@@ -2,7 +2,7 @@
   :title "Helpdesk works again"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it"]
 }
 

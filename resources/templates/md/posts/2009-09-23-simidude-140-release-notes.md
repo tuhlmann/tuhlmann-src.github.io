@@ -2,7 +2,7 @@
   :title "Simidude 1.4.0 Release Notes"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["release-notes"]
 }
 

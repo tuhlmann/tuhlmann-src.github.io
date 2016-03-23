@@ -2,7 +2,7 @@
   :title "Initialize SWT Action accelerators in SWT 3.4"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

@@ -2,7 +2,7 @@
   :title "Announce: Dopus 0.9.14 released"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["programming"]
 }
 

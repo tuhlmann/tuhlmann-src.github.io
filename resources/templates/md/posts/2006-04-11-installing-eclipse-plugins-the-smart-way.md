@@ -2,7 +2,7 @@
   :title "Installing Eclipse plugins the smart way"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "programming"]
 }
 

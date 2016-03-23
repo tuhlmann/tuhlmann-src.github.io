@@ -2,7 +2,7 @@
   :title "Billiger vom Festnetz ins Handynetz telefonieren"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["telefonie"]
 }
 

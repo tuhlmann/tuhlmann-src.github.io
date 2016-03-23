@@ -2,7 +2,7 @@
   :title "Announce: DobuDish version 1.1.1 released"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["dobudish" "docbook" "english" "programming"]
 }
 

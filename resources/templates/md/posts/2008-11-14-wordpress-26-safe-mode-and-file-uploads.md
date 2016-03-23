@@ -2,7 +2,7 @@
   :title "Wordpress 2.6, safe_mode and file uploads"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

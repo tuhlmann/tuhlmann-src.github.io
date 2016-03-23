@@ -2,7 +2,7 @@
   :title "Simidude- Easy to use cross platform drag & drop"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["newsletter"]
 }
 

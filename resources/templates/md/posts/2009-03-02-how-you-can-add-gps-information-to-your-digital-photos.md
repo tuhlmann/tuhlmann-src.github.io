@@ -2,7 +2,7 @@
   :title "How you can add GPS information to your digital photos"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "gps" "photography"]
 }
 

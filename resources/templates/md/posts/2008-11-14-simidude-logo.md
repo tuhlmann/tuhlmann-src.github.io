@@ -2,7 +2,7 @@
   :title "Simidude logo"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["newsletter" "simidude"]
 }
 

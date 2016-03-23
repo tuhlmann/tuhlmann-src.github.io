@@ -2,7 +2,7 @@
   :title "No Risk No F.U.N (Fülle und Noch mehr)"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["uncategorized"]
 }
 

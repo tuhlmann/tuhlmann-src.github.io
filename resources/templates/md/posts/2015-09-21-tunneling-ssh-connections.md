@@ -1,7 +1,7 @@
 {:title "Tunneling SSH Connections"
  :layout :post
  :banner "/img/home-bg.jpg"
- :hide-disqus? false
+ :show-disqus? true
 }
 
 ## Problem

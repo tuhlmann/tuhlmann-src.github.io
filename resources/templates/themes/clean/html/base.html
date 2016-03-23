@@ -19,11 +19,14 @@
 
   <!-- Custom Fonts -->
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
   <!--<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
         type='text/css'>-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
+
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
@@ -195,8 +198,12 @@
 
   <script src="https://squaresend.com/squaresend.js"></script>
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  {% script "js/highlight.pack.js" %}
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
 
   <script>
     sqs_title = "Drop Us a Line!";

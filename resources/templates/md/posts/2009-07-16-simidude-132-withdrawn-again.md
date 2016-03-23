@@ -2,7 +2,7 @@
   :title "Simidude 1.3.2 withdrawn - again"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it"]
 }
 

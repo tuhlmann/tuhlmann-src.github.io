@@ -2,7 +2,7 @@
   :title "Macify a SWT application in a cross platform way"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it"]
 }
 

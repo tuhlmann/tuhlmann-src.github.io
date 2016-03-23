@@ -2,7 +2,7 @@
   :title "Announce: Dopus renamed to DobuDish"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["docbook" "english" "programming"]
 }
 

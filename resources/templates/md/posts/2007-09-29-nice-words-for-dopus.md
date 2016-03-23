@@ -2,7 +2,7 @@
   :title "Nice words for Dopus"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

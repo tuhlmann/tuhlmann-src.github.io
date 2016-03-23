@@ -2,7 +2,7 @@
   :title "A simple and free MP3 Tag Editor"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "it" "programming"]
 }
 

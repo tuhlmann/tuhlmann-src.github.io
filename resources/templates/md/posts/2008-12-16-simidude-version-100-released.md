@@ -2,7 +2,7 @@
   :title "Simidude Version 1.0.0 released"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["newsletter"]
 }
 

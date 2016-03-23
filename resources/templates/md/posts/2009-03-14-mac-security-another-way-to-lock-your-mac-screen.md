@@ -2,7 +2,7 @@
   :title "Mac Security- Another Way to Lock Your Mac Screen"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "english" "mac" "mac"]
 }
 

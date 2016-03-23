@@ -1,7 +1,7 @@
 {:title "ClojureScript Testing with Doo and Figwheel"
  :layout :post
  :banner "/img/home-bg.jpg"
- :hide-disqus? false
+ :show-disqus? true
 }
 
 These days I was playing with strategies to run

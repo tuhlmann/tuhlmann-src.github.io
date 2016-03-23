@@ -2,7 +2,7 @@
   :title "Java Tip: How to find the location of a class being executed"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

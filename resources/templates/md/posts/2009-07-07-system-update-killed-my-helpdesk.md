@@ -2,7 +2,7 @@
   :title "System Update killed my Helpdesk"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it"]
 }
 

@@ -2,7 +2,7 @@
   :title "Apologies for the messed up news feed"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["newsletter" "simidude"]
 }
 

@@ -2,7 +2,7 @@
   :title "Migrating from Eclipse 3.1 to 3.2"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

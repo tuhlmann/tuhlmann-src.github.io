@@ -2,7 +2,7 @@
   :title "Version 1.3.0 of AGYNAMIX Simidude, the cross platform network clipboard is available"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it" "marketing" "newsletter"]
 }
 

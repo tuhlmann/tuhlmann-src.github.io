@@ -2,7 +2,7 @@
   :title "A New BitsDuJour Sale is on the Way!"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["marketing" "newsletter"]
 }
 

@@ -13,7 +13,7 @@
         {% endif %}
     </div>
 
-    {% if disqus-shortname  %}
+    {% if all disqus-shortname post.show-disqus? %}
     <div id="disqus_thread" style="margin-top:20px;" class="hidden-print"></div>
     <script type="text/javascript">
         (function() {

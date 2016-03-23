@@ -2,7 +2,7 @@
   :title "Java Tip: Find the call path (stack trace) of a method"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "programming"]
 }
 

@@ -2,7 +2,7 @@
   :title "Dopus (0.9.6) available with and without JRE"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["programming"]
 }
 

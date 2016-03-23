@@ -2,7 +2,7 @@
   :title "Run 32 bit SWT apps from Eclipse in Snow Leopard"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["it"]
 }
 

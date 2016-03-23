@@ -2,7 +2,7 @@
   :title "Synchronize your media library with iTunes"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "it" "itunes" "mac" "media" "news" "programming"]
 }
 

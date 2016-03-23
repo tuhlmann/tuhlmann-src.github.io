@@ -2,7 +2,7 @@
   :title "How to differentiate in a crowded market"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["business" "english"]
 }
 

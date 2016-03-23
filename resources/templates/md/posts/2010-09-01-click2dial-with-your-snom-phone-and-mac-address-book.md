@@ -2,7 +2,7 @@
   :title "Click2Dial with your Snom Phone and Mac Address Book"
   :layout :post
   :banner "/img/home-bg.jpg"
-  :hide-disqus? true
+  :show-disqus? false
   :tags ["english" "fritzbox-snom-phone" "mac" "telefonie"]
 }
 
