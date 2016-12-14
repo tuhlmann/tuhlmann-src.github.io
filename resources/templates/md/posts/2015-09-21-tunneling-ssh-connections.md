@@ -28,6 +28,21 @@ Here are my settings for the SOCKS proxy within FoxyProxy:
 
 ![FoxyProxy Details](/img/posts/2015-09-21/foxyproxy_2.png)
 
+__Update 7.5.2016:__ As [Richard](https://twitter.com/d6y) reports, if you are on a Mac you can configure its on board socks proxy like so:
+
+```
+# enable it:
+sudo networksetup -setsocksfirewallproxy Wi-Fi localhost 9050
+```
+
+```
+# disable it:
+sudo networksetup -setsocksfirewallproxystate Wi-Fi off
+```
+
+The `networksetup` command also has an option `-setproxybypassdomains` to exclude certain domains from using the configured proxy.
+
+
 ## SSH Access
 Establishing ssh access is a tad bit more involved, but not too much. It also uses a ssh tunnel through the fixed IP remote server.
 I set up a ssh config that allows me to type `ssh firewalled-server` and get a connection from my dynamic IP, without having to login to the remote machine and open another ssh session from there.

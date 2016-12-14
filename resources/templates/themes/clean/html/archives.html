@@ -11,7 +11,11 @@
         <!--<ul>-->
         {% for post in group.posts %}
         <li>
-            <a href="{{post.uri}}">{{post.date|date:"MMM dd YYYY"}} - {{post.title}}</a>
+            <a href="{{post.uri}}" class="post-list-item">
+              <div class="post-list-date">{{post.date|date:"MMM dd YYYY"}}</div>
+              <div class="post-list-sep"></div>
+              <div class="post-list-title">{{post.title}}</div>
+            </a>
         </li>
         {% endfor %}
         <!--</ul>-->

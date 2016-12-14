@@ -573,3 +573,22 @@ body {
     display:none;
   }
 }
+
+.post-list-item {
+	display: -webkit-flex;
+  display: flex;
+	justify-content: center;
+
+  .post-list-date {
+		flex: 0 0 12rem;
+  }
+  .post-list-sep {
+		flex: 0 0 1.5rem;
+  }
+  .post-list-sep::after {
+    content: " - ";
+  }
+  .post-list-title {
+		flex: 1 0 0;
+  }
+}
