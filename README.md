@@ -14,7 +14,10 @@ Prerequisites:
 ## Install
 
 - Run `shipIt.sh`
-- On the server, go to `/var/www/agynamix.de/html`
-
-- run `~/ship/extract.sh`
-- `sudo service apache2 reload`
+- On the server:
+  - `sudo -s`
+  - go to `/var/www/agynamix.de/html`
+  - run `/home/tuhlmann/ship/extract.sh`
+  - `cd ..`
+  - `sudo chown -R www-data:www-data html`
+  - `sudo service apache2 reload`

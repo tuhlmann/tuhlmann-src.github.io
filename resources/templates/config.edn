@@ -20,7 +20,7 @@
  :theme              "clean"
  :resources          ["img", "img/favicon.ico"]
  :keep-files         [".git"]
- :disqus?            true
+ :disqus?            false
  :disqus-shortname   "agynamix"
  :ignored-files      [#"\.#.*" #".*\.swp$"]
  :posts-per-page     5
