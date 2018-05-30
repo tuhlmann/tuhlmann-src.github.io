@@ -18,15 +18,12 @@
   {% style "css/clean-blog.css" %}
 
   <!-- Custom Fonts -->
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
-  <link href='//fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-  <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> -->
-  <!--<link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700' rel='stylesheet'
-        type='text/css'>-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
-
+  {% style "css/font-awesome.min.css" %}
+  {% style "css/noto-serif-font.css" %}
+  {% style "css/noto-sans-font.css" %}
+  {% style "css/highlight-default.min.css" %}
+  
+  <link href="/css/highlight-default.min.css" rel="stylesheet" type="text/css">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
@@ -39,10 +36,12 @@
 
   <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
   <script type="text/javascript">
-    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"https://silktide.com/privacy-policy/","theme":"dark-bottom"};
+    window.cookieconsent_options = {
+      "message":
+      "This website uses cookies to ensure you get the best experience. To make this site work, we log user data such as IP addresses. To use the site you must agree to our Privacy Policy, including cookie policy.","dismiss":"Got it!","learnMore":"Privacy Policy","link":"https://www.agynamix.de/pages/terms.html","theme":"dark-bottom"};
   </script>
 
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+  {% script "js/cookieconsent.min.js" %}
   <!-- End Cookie Consent plugin -->
 
 </head>
@@ -176,6 +175,7 @@
                 </span>
               </a>
             </li>
+            <!--
             <li>
               <a href="http://stackoverflow.com/users/7143/torsten-uhlmann" target="_blank">
                 <span class="fa-stack fa-lg">
@@ -184,6 +184,7 @@
                 </span>
               </a>
             </li>
+          -->
           </ul>
 
           <p class="copyright text-muted">Copyright &copy; 2015 <a href="mailto:{{author-email}}?subject=I%20just%20wanna%20says%20Hi!&body=Let%20me%20know%20what%20you%20think...">{{author}}</a>.&nbsp;
@@ -194,9 +195,8 @@
       </div>
     </div>
   </footer>
-
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+  
+  {% script "js/jquery-1.11.0.min.js" %}
 
   <!-- Bootstrap Core JavaScript -->
   {% script "js/bootstrap.min.js" %}
